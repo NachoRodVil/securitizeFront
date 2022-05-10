@@ -1,7 +1,7 @@
 import axios from "axios";
 import { ExchangeRate, Wallet } from "./types";
 
-const API_URL = "https://securitize-challenge-api.herokuapp.com/"
+const API_URL = "https://securitize-challenge-api.herokuapp.com"
 
 async function fetchWallets(): Promise<Wallet[]> {
     const data = await axios.get(`${API_URL}/wallets`);
