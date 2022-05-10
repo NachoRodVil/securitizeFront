@@ -1,0 +1,132 @@
+body{
+    background-color: rgb(29, 29, 80);
+    color: rgb(255, 255, 255);
+}
+
+hr.rounded {
+    border-top: 8px solid rgb(143, 160, 190);
+    border-radius: 5px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.title{
+    font-size: 7em;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+    font-weight: bolder;
+    line-height: normal;
+    color: rgb(255, 255, 255);
+}
+.subTitle{
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(143, 160, 190);
+    margin-bottom: 3%;
+}
+.main {
+    margin-top: 4%;
+    text-align: center;
+}
+
+label {
+    font-size: 1.75em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+input{
+    border-radius: 10px;
+    margin-left: 10px;
+    max-width: 125px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(9, 9, 69);;
+    border-color: rgb(255, 255, 255);
+    padding: 3.5px 5px;
+}
+.submitButton{
+    vertical-align: top;
+    margin-left: 10px;
+    background-color:rgb(98, 107, 122) !important;
+    border-color: azure;
+    border-width: 1.5px;
+    font-size: 1.4em;
+}
+.cardRow{
+    max-width: 90%;
+    margin: auto
+}
+.cardContainer{
+    background-color:rgb(9, 9, 69);
+    border-width: 5px;
+    border: solid rgb(143, 160, 190);
+    margin-bottom: 20px;
+}
+.cardTitle{
+    text-align: left;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+.cardBadge {
+    font-size: 1.2em;
+    margin-top: 4px;
+}
+.old{
+    background-color: #6D213C !important;
+}
+.new{
+    background-color: #23967F !important;
+}
+.cardTitleRow{
+    margin-bottom: 20px;
+}
+.cardBody{
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.switch-off.btn {
+    padding-left: 0.5rem;
+    background-color: #23967F !important;
+    font-weight: bold;
+    color: white;
+}
+
+.switch-on.btn {
+    padding-right: 0.5rem;
+    background-color: #6D213C !important;
+    font-weight: bold;
+    border-color: rgb(255, 255, 255);
+}
+
+.switch-on, .switch-off, switch, .btn-primary {
+    padding: .375rem .25rem;
+    border-color: rgb(255, 255, 255);
+}
+
+.btn-primary{
+    background-color: rgb(255, 255, 255);   
+}
+.btn-primary:hover, .btn-light:hover{
+    border-color: rgb(98, 107, 122);
+    background-color: rgb(98, 107, 122);
+}
+.iconButton{
+    background-color: transparent;
+    border: none;
+    color:white
+}
+.iconButton.cancel{
+    color:#6D213C
+}
+.iconButtonStar{
+    background-color: transparent;
+    border: none;
+    color:#ffc107;
+    font-size: 20px;
+}
+.favCol{
+    text-align: right;
+    border-color: #ffc107;
+}
