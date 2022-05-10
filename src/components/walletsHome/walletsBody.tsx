@@ -13,8 +13,8 @@ interface WalletsBodyProps {
 
 function WalletsBody(props: WalletsBodyProps) {
     const [checked, setChecked] = useState(false);
-    const euroData = props.exchangeRates.find(exchangeRate => exchangeRate.currency == "EUR")
-    const usdData = props.exchangeRates.find(exchangeRate => exchangeRate.currency == "USD")
+    const euroData = props.exchangeRates?.find(exchangeRate => exchangeRate.currency == "EUR")
+    const usdData = props.exchangeRates?.find(exchangeRate => exchangeRate.currency == "USD")
     return (
         <div>
             <Row>
