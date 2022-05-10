@@ -48,7 +48,7 @@ function WalletsBody(props: WalletsBodyProps) {
 
                 {props.wallets.map(wallet => {
                     return (
-                            <WalletCard wallet={wallet} euroData={euroData || null} usdData={usdData || null} checked={checked}/>
+                            <WalletCard wallet={wallet} euroData={euroData || null} usdData={usdData || null} favCheck={checked}/>
                     )
                 })}
             </Row>

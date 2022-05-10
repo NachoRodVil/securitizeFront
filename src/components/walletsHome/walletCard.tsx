@@ -14,7 +14,7 @@ interface WalletCardProps {
     wallet: Wallet;
     euroData: ExchangeRate | null;
     usdData: ExchangeRate | null;
-    checked: boolean
+    favCheck: boolean
 }
 
 function WalletCard(props: WalletCardProps) {
@@ -24,7 +24,7 @@ function WalletCard(props: WalletCardProps) {
     const [value, setValue] = useState<string>(props.wallet.eth.toString() || "0")
     const [loading, setLoading] = useState<boolean>(false)
     const [fav, setFav] = useState<boolean>(props.wallet.isFav)
-    const display = props.checked ? fav ? true : false : true
+    const display = props.favCheck ? fav ? true : false : true
 
     const checkIfOld = (walletAge: string): boolean => {
         const date = new Date()
@@ -101,7 +101,7 @@ function WalletCard(props: WalletCardProps) {
                             </Col>
                             <Col lg="2">
                                 <BootstrapSwitchButton
-                                    checked={true}
+                                    checked={currency == "usd" ? true : false}
                                     onlabel='USD'
                                     offlabel='EUR'
                                     onChange={(checked: boolean) => {
